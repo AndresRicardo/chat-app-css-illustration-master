@@ -1,0 +1,320 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Rubik", sans-serif;
+  background-color: #f5f3f7;
+}
+
+#container {
+  width: 100%;
+  padding: 50px 30px;
+  background-color: #f5f3f7;
+  background-image: url(../images/mobile-background.svg);
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container #mobile {
+  width: 245px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3%;
+  border-radius: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 25px #a39daa;
+          box-shadow: 0px 0px 25px #a39daa;
+}
+
+#container #mobile #screen {
+  background-color: #f5f3f7;
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+
+#container #mobile #screen #screen-nav {
+  width: 100%;
+  padding: 25px 5px 10px 5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#8838ff), to(#e942ff));
+  background: linear-gradient(to right, #8838ff, #e942ff);
+}
+
+#container #mobile #screen #screen-nav #notch {
+  width: 130px;
+  height: 15px;
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 65px);
+  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#container #mobile #screen #screen-nav #contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container #mobile #screen #screen-nav #contact * {
+  margin: 0px 3px;
+}
+
+#container #mobile #screen #screen-nav #contact #nav-button {
+  height: 15px;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  rotate: -90deg;
+  font-size: 2em;
+}
+
+#container #mobile #screen #screen-nav #contact #avatar {
+  width: 25px;
+}
+
+#container #mobile #screen #screen-nav #contact #avatar > img {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+#container #mobile #screen #screen-nav #contact #contact-info #contact-name {
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+#container #mobile #screen #screen-nav #contact #contact-info #contact-state {
+  color: #d89eff;
+  font-size: 0.5rem;
+}
+
+#container #mobile #screen #screen-nav #contact #nav-menu {
+  background-color: transparent;
+  border: none;
+  color: white;
+  rotate: -90deg;
+  margin-left: auto;
+  text-align: right;
+}
+
+#container #mobile #screen #chat-area {
+  padding: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #f5f3f7;
+}
+
+#container #mobile #screen #chat-area .message {
+  background-color: yellowgreen;
+  max-width: 65%;
+  padding: 7px;
+  line-height: 1.3em;
+  border-radius: 10px;
+  margin: 4px;
+  font-size: 0.5rem;
+}
+
+#container #mobile #screen #chat-area .message .image-item {
+  width: 30%;
+  margin: 0px 2px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+#container #mobile #screen #chat-area .message .image-item > img {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+#container #mobile #screen #chat-area .arrived {
+  background-color: #ede4f5;
+  color: #9241c8;
+  border-bottom-left-radius: 3px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#container #mobile #screen #chat-area .sent {
+  background-color: white;
+  color: #6e5d7e;
+  border-bottom-right-radius: 3px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#container #mobile #screen #chat-area .items {
+  padding: 0px;
+  background-color: transparent;
+  color: #6e5d7e;
+}
+
+#container #mobile #screen #chat-area .items .image-item:first-child {
+  margin-left: 0px;
+}
+
+#container #mobile #screen #chat-area .items .image-item:last-child {
+  margin-right: 0px;
+}
+
+#container #mobile #screen #chat-area .offer {
+  max-width: 80%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(to right, #e942ff, #8838ff);
+}
+
+#container #mobile #screen #chat-area .offer .buy-checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 1.4em;
+  height: 1.4em;
+  margin-right: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid white;
+}
+
+#container #mobile #screen #chat-area .offer .offer-price {
+  margin-left: auto;
+  margin-right: 10px;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: white;
+}
+
+#container #mobile #screen .send-field {
+  width: 95%;
+  height: 35px;
+  margin: 0px auto;
+  border-radius: 20px;
+  font-size: 0.6em;
+  padding-left: 10px;
+  background-color: white;
+}
+
+#container #mobile #screen .send-field #text-field {
+  border: none;
+  width: 83%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+#container #mobile #screen .send-field #text-field::-webkit-input-placeholder {
+  color: #c6cacd;
+}
+
+#container #mobile #screen .send-field #text-field:-ms-input-placeholder {
+  color: #c6cacd;
+}
+
+#container #mobile #screen .send-field #text-field::-ms-input-placeholder {
+  color: #c6cacd;
+}
+
+#container #mobile #screen .send-field #text-field::placeholder {
+  color: #c6cacd;
+}
+
+#container #mobile #screen .send-field #send-button {
+  width: 25px;
+  height: 25px;
+  margin: 0px;
+  border: none;
+  border-radius: 50%;
+  background-color: #3e2753;
+  color: #f5f3f7;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+#container #main {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#container #main #page-title {
+  color: #3e2753;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+#container #main #page-description {
+  color: #a39daa;
+}
+
+.attribution {
+  margin-top: auto;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #8838ff;
+}
+/*# sourceMappingURL=styles.css.map */

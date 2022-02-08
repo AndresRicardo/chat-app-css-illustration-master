@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | [/chat-app-css-illustration-master]</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div id="container">
+    <section id="mobile">
+      <div id="screen">
+        <nav id="screen-nav">
+          <div id="notch"></div>
+          <div id="contact">
+            <button id="nav-button">
+              ^ </button>
+            <div id="avatar"><img src="images/avatar.jpg" alt="avatar"></div>
+            <div id="contact-info">
+              <div id="contact-name">Samuel Green</div>
+              <div id="contact-state">Available to Walk</div>
+            </div>
+            <button id="nav-menu">...</button>
+          </div>
+        </nav>
+
+        <div id="chat-area">
+          <div class="message arrived">That sounds great. I’d be happy with that.</div>
+          <div class="message arrived">Could you send over some pictures of your dog, please?</div>
+          <div class="message sent items">
+            <div class="image-item"><img src="images/dog-image-1.jpg" alt="dog-1"></div>
+            <div class="image-item"><img src="images/dog-image-2.jpg" alt="dog-2"></div>
+            <div class="image-item"><img src="images/dog-image-3.jpg" alt="dog-3"></div>
+
+          </div>
+          <div class="message sent">Here are a few pictures. She’s a happy girl!</div>
+          <div class="message sent">Can you make it?</div>
+          <div class="message arrived">She looks so happy! The time we discussed works. How long shall I take her out
+            for?
+          </div>
+
+          <form class="message arrived offer">
+            <input type="checkbox" name="buy" class="buy-checkbox">
+            <label for="time-walk" class="offer-description">30 minute walk</label>
+            <label for="price" class="offer-price">$29</label>
+          </form>
+
+          <form class="message arrived offer">
+            <input type="checkbox" name="buy" class="buy-checkbox">
+            <label for="time-walk" class="offer-description">1 hour walk</label>
+            <label for="price" class="offer-price">$49</label>
+          </form>
+        </div>
+
+        <form class="send-field">
+          <input type="text" name="Type a message" id="text-field" placeholder="  Type a message…">
+          <button id="send-button">></button>
+        </form>
+      </div>
+    </section>
+
+    <main id="main">
+      <h1 id="page-title">Simple booking</h1>
+      <p id="page-description">Stay in touch with our dog walkers through the chat interface. This makes it easy to
+        discuss arrangements and make bookings. Once the walk has been completed you can rate
+        your walker and book again all through the chat.</p>
+    </main>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Richi</a>.
+  </div>
+</body>
+
+</html>
